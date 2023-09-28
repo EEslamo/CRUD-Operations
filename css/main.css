@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #007bff;
+}
+
+body span {
+    color: red;
+    font-weight: bold;
+}
+
+.card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.card-body {
+    padding: 10px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    width: 90%;
+    margin: 90px auto;
+}
+
+.container h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+
+.form .container .form-group {
+    display: block;
+    margin: 10px 0px;
+}
+
+.form .container .form-group .form-control {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 0px 10px 10px;
+    border-radius: 10px;
+    border: 1px black solid;
+    transition: all .5s;
+}
+
+.form .container .form-group .form-control::placeholder {
+    font-weight: bold;
+}
+
+
+.form .container .form-group .form-control:focus {
+    outline: rgb(140, 195, 255) 1px solid;
+    border: 0;
+    box-shadow: 0px 0px 9px rgb(140, 195, 255);
+}
+
+.btn {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: transparent;
+    outline: 4px solid green;
+    color: green;
+    border: 0px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.005, 1.005);
+}
+
+.row {
+    /* display: flex; */
+    /* justify-content: space-around; */
+}
+
+.row .item {
+    width: 100%;
+}
+
+
+.data .table {
+    width: 100%;
+    text-align: center;
+}
+
+#clearbtn {
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.data .table tr {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    /* padding: 10px; */
+}
+
+.data .table tr th,
+td {
+    width: 100%;
+    padding: 10px;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.data .table thead tr {
+    width: 100%;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+
+.data .table tr th {
+    width: 100%;
+    padding: 10px;
+}
+
+.data .table tbody tr {
+    border: 2px solid white;
+}
+
+
+table i {
+    font-size: 20px;
+    margin: 0px 10px;
+    color:  #007bff;
+    cursor: pointer;
+}
+
+.none {
+    display: none;
+}
+
+.btn-update {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: burlywood;
+    color: blue;
+    border: 0px;
+    cursor: pointer;
+}
+
+.invalid {
+    border: 2px solid red;
+    box-shadow: 0px 0px 9px rgb(159, 58, 58);
+    outline: rgb(159, 58, 58) 0px solid;
+}
+
+.invalid-span {
+    display: none;
+}
+
+@media(max-width:600px) {
+
+
+    .data .container .card {
+        overflow-x: scroll;
+    }
+}

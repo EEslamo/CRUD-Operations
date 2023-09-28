@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div class="form">
+        <div class="container">
+            <h1>Add new prodcuts <i class="fa-solid fa-list-check"></i></h1>
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="title" placeholder="Product Title">
+                        <span class="invalid-span">This field is required !</span>
+                    </div>
+                    <div class="row" id="allcost">
+                        <div class="item">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Price">
+                                <span class="invalid-span">This field is required !</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Tax %">
+                                <span class="invalid-span">This field is required !</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Discount">
+                                <span class="invalid-span">This field is required !</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Total" readonly>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="count" placeholder="Count of Added Products">
+                        <span class="invalid-span">This field is required !</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="department" placeholder="Department">
+                        <span class="invalid-span">This field is required !</span>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn">Add this product</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="data">
+        <div class="container">
+            <h1>List new prodcut</h1>
+            <div class="card">
+                <button id="clearbtn">Clear <span id="countbtn"></span></button>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Title</th>
+                            <th>Price</th>
+                            <th>Tax</th>
+                            <th>Discount</th>
+                            <th>Total</th>
+                            <th>Department</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/mai.js"></script>
+</body>
+
+</html>
